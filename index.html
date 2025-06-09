@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jw Devs | Desarrollo Profesional de Software</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <span class="fw-bold text-primary">JW </span><span class="text-white">Devs</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicios">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#proyectos">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tecnologias">Tecnologías</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#nosotros">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="inicio" class="hero-section">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-6">
+          <h1 class="display-3 fw-bold mb-4">Transformamos Ideas en <span class="text-primary">Realidad Digital</span></h1>
+          <p class="lead mb-5">Soluciones tecnológicas innovadoras diseñadas para impulsar el crecimiento de tu negocio en la era digital.</p>
+          <div class="d-flex gap-3">
+            <a href="#contacto" class="btn btn-primary btn-lg px-4">Contáctanos</a>
+            <a href="#servicios" class="btn btn-outline-light btn-lg px-4">Ver Servicios</a>
+          </div>
+          <div class="mt-5 d-flex align-items-center gap-4">
+            <div class="d-flex align-items-center">
+              <i class="fas fa-check-circle text-success me-2 fs-5"></i>
+              <span>+150 proyectos exitosos</span>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="fas fa-check-circle text-success me-2 fs-5"></i>
+              <span>Equipo certificado</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 d-none d-lg-block">
+          <img src="img/hero-image.png" alt="Desarrollo de software" class="img-fluid floating-animation">
+        </div>
+      </div>
+    </div>
+    <div class="hero-waves">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#ffffff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </svg>
+    </div>
+  </header>
+
+  <!-- Marcas -->
+  <section class="brands-section py-4 bg-light">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-6 col-md-4 col-lg-2 text-center mb-3 mb-lg-0">
+          <img src="img/brands/microsoft.png" alt="Microsoft" class="img-fluid brand-logo">
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 text-center mb-3 mb-lg-0">
+          <img src="img/brands/google.png" alt="Google" class="img-fluid brand-logo">
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 text-center mb-3 mb-lg-0">
+          <img src="img/brands/amazon.png" alt="Amazon" class="img-fluid brand-logo">
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 text-center mb-3 mb-lg-0">
+          <img src="img/brands/ibm.png" alt="IBM" class="img-fluid brand-logo">
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 text-center">
+          <img src="img/brands/oracle.png" alt="Oracle" class="img-fluid brand-logo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios Mejorados -->
+  <section id="servicios" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="badge bg-primary-soft text-primary mb-3">NUESTROS SERVICIOS</span>
+        <h2 class="fw-bold mb-3">Soluciones Digitales Integrales</h2>
+        <p class="text-muted mx-auto" style="max-width: 700px;">Ofrecemos un portafolio completo de servicios tecnológicos diseñados para cubrir todas las necesidades de tu negocio en el mundo digital.</p>
+      </div>
+      
+      <div class="row g-4">
+        <!-- Desarrollo Web -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card service-card border-0 h-100">
+            <div class="card-body p-4">
+              <div class="icon-box bg-primary-gradient mb-4">
+                <i class="fas fa-laptop-code text-white"></i>
+              </div>
+              <h4 class="fw-bold mb-3">Desarrollo Web Avanzado</h4>
+              <p class="text-muted mb-4">Creamos experiencias web excepcionales con las últimas tecnologías del mercado.</p>
+              <ul class="service-features">
+                <li><i class="fas fa-check-circle text-primary me-2"></i> Aplicaciones web progresivas (PWA)</li>
+                <li><i class="fas fa-check-circle text-primary me-2"></i> Portales corporativos</li>
+                <li><i class="fas fa-check-circle text-primary me-2"></i> Sistemas de gestión de contenido</li>
+                <li><i class="fas fa-check-circle text-primary me-2"></i> Plataformas e-learning</li>
+                <li><i class="fas fa-check-circle text-primary me-2"></i> Soluciones empresariales</li>
+              </ul>
+              <a href="#contacto" class="btn btn-link ps-0 mt-3">Saber más <i class="fas fa-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Apps Móviles -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card service-card border-0 h-100">
+            <div class="card-body p-4">
+              <div class="icon-box bg-success-gradient mb-4">
+                <i class="fas fa-mobile-alt text-white"></i>
+              </div>
+              <h4 class="fw-bold mb-3">Desarrollo Móvil</h4>
+              <p class="text-muted mb-4">Aplicaciones nativas e híbridas que ofrecen experiencias de usuario excepcionales.</p>
+              <ul class="service-features">
+                <li><i class="fas fa-check-circle text-success me-2"></i> Apps iOS y Android nativas</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> Desarrollo multiplataforma</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> Integración con APIs</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> Aplicaciones empresariales</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> Juegos móviles</li>
+              </ul>
+              <a href="#contacto" class="btn btn-link ps-0 mt-3">Saber más <i class="fas fa-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- UI/UX Design -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card service-card border-0 h-100">
+            <div class="card-body p-4">
+              <div class="icon-box bg-danger-gradient mb-4">
+                <i class="fas fa-paint-brush text-white"></i>
+              </div>
+              <h4 class="fw-bold mb-3">Diseño UI/UX</h4>
+              <p class="text-muted mb-4">Diseños centrados en el usuario que mejoran la interacción y conversión.</p>
+              <ul class="service-features">
+                <li><i class="fas fa-check-circle text-danger me-2"></i> Investigación de usuarios</li>
+                <li><i class="fas fa-check-circle text-danger me-2"></i> Prototipado interactivo</li>
+                <li><i class="fas fa-check-circle text-danger me-2"></i> Diseño de interfaces</li>
+                <li><i class="fas fa-check-circle text-danger me-2"></i> Pruebas de usabilidad</li>
+                <li><i class="fas fa-check-circle text-danger me-2"></i> Sistemas de diseño</li>
+              </ul>
+              <a href="#contacto" class="btn btn-link ps-0 mt-3">Saber más <i class="fas fa-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Backend -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card service-card border-0 h-100">
+            <div class="card-body p-4">
+              <div class="icon-box bg-info-gradient mb-4">
+                <i class="fas fa-server text-white"></i>
+              </div>
+              <h4 class="fw-bold mb-3">Backend & APIs</h4>
+              <p class="text-muted mb-4">Infraestructura robusta y escalable para soportar tus aplicaciones.</p>
+              <ul class="service-features">
+                <li><i class="fas fa-check-circle text-info me-2"></i> APIs RESTful y GraphQL</li>
+                <li><i class="fas fa-check-circle text-info me-2"></i> Microservicios</li>
+                <li><i class="fas fa-check-circle text-info me-2"></i> Bases de datos SQL/NoSQL</li>
+                <li><i class="fas fa-check-circle text-info me-2"></i> Autenticación y seguridad</li>
+                <li><i class="fas fa-check-circle text-info me-2"></i> Integración de sistemas</li>
+              </ul>
+              <a href="#contacto" class="btn btn-link ps-0 mt-3">Saber más <i class="fas fa-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Cloud -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card service-card border-0 h-100">
+            <div class="card-body p-4">
+              <div class="icon-box bg-warning-gradient mb-4">
+                <i class="fas fa-cloud text-white"></i>
+              </div>
+              <h4 class="fw-bold mb-3">Cloud Computing</h4>
+              <p class="text-muted mb-4">Soluciones en la nube para mayor escalabilidad y disponibilidad.</p>
+              <ul class="service-features">
+                <li><i class="fas fa-check-circle text-warning me-2"></i> Migración a la nube</li>
+                <li><i class="fas fa-check-circle text-warning me-2"></i> Arquitectura serverless</li>
+                <li><i class="fas fa-check-circle text-warning me-2"></i> DevOps y CI/CD</li>
+                <li><i class="fas fa-check-circle text-warning me-2"></i> Monitoreo y logging</li>
+                <li><i class="fas fa-check-circle text-warning me-2"></i> Soluciones híbridas</li>
+              </ul>
+              <a href="#contacto" class="btn btn-link ps-0 mt-3">Saber más <i class="fas fa-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- IA y Data -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card service-card border-0 h-100">
+            <div class="card-body p-4">
+              <div class="icon-box bg-purple-gradient mb-4">
+                <i class="fas fa-brain text-white"></i>
+              </div>
+              <h4 class="fw-bold mb-3">Inteligencia Artificial</h4>
+              <p class="text-muted mb-4">Lleva tu negocio al siguiente nivel con soluciones de IA y análisis de datos.</p>
+              <ul class="service-features">
+                <li><i class="fas fa-check-circle text-purple me-2"></i> Machine Learning</li>
+                <li><i class="fas fa-check-circle text-purple me-2"></i> Procesamiento de lenguaje</li>
+                <li><i class="fas fa-check-circle text-purple me-2"></i> Visión por computadora</li>
+                <li><i class="fas fa-check-circle text-purple me-2"></i> Big Data & Analytics</li>
+                <li><i class="fas fa-check-circle text-purple me-2"></i> Chatbots inteligentes</li>
+              </ul>
+              <a href="#contacto" class="btn btn-link ps-0 mt-3">Saber más <i class="fas fa-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+  </section>
+
+  <!-- Proceso de Trabajo -->
+  <section class="process-section py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="badge bg-primary-soft text-primary mb-3">NUESTRO PROCESO</span>
+        <h2 class="fw-bold mb-3">Cómo Trabajamos</h2>
+        <p class="text-muted mx-auto" style="max-width: 700px;">Metodología ágil y transparente que garantiza el éxito de tus proyectos digitales.</p>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="process-step text-center">
+            <div class="step-number bg-primary-gradient">I</div>
+            <h4 class="mt-4 mb-3">Descubrimiento</h4>
+            <p class="text-muted">Analizamos tus necesidades y objetivos para definir los requerimientos y funcionalidades del proyecto.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3">
+          <div class="process-step text-center">
+            <div class="step-number bg-success-gradient">II</div>
+            <h4 class="mt-4 mb-3">Diseño</h4>
+            <p class="text-muted">Creamos prototipos y diseños centrados en la experiencia de usuario, interfaces intuitivas y funcionales.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3">
+          <div class="process-step text-center">
+            <div class="step-number bg-warning-gradient">III</div>
+            <h4 class="mt-4 mb-3">Desarrollo</h4>
+            <p class="text-muted">Implementamos las soluciones con metodologías ágiles, reuniones constantes y de la mano del cliente.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3">
+          <div class="process-step text-center">
+            <div class="step-number bg-info-gradient">IV</div>
+            <h4 class="mt-4 mb-3">Lanzamiento</h4>
+            <p class="text-muted">Desplegamos el producto y brindamos soporte continuo para su evolución y buena escalabilidad.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos Mejorados -->
+  <section id="proyectos" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="badge bg-primary-soft text-primary mb-3">PORTAFOLIO</span>
+        <h2 class="fw-bold mb-3">Proyectos Destacados</h2>
+        <p class="text-muted mx-auto" style="max-width: 700px;">Algunos de los trabajos que hemos realizado para nuestros clientes satisfechos.</p>
+      </div>
+      
+      <div class="row g-4">
+        <!-- Proyecto 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card border-0 overflow-hidden">
+            <div class="project-image">
+              <img src="img/projects/zerox.png" class="card-img-top" alt="Plataforma E-commerce">
+              <div class="project-overlay">
+                <a href="https://zerox.com.pe/" class="btn btn-primary btn-sm">Ir a</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <h5 class="fw-bold mb-0">ZEROX | Peru - Tienda de Videojuegos y Consolas</h5>
+                <span class="badge bg-primary">2024 - 2025</span>
+              </div>
+              <p class="text-muted mb-3">Tienda de videojuegos, consolas y accesorios, pagina web completa y sistema de gestión de inventario de productos, stock, ingresos y egresos, etc.</p>
+              <div class="project-meta d-flex justify-content-between">
+                <div>
+                  <span class="text-muted small d-block">Cliente:</span>
+                  <span class="fw-bold">Dan Quispe Cabanillas</span>
+                </div>
+                <div>
+                  <span class="text-muted small d-block">Sector:</span>
+                  <span class="fw-bold">Videojuegos</span>
+                </div>
+              </div>
+              <hr class="my-3">
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-light text-dark">Hmtl</span>
+                <span class="badge bg-light text-dark">Css</span>
+                <span class="badge bg-light text-dark">Php</span>
+                <span class="badge bg-light text-dark">Sql</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Proyecto 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card border-0 overflow-hidden">
+            <div class="project-image">
+              <img src="img/projects/moromex.png" class="card-img-top" alt="App de Salud">
+              <div class="project-overlay">
+                <a href="https://play.google.com/store/apps/details?id=com.belsoftbo.moromex&hl=es_EC&pli=1" class="btn btn-primary btn-sm">Ir a</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <h5 class="fw-bold mb-0">Moromex | Mexico</h5>
+                <span class="badge bg-success">2024</span>
+              </div>
+              <p class="text-muted mb-3">Aplicación móvil destinada al ecommerce en Mexico, compra y venta de ropas y accesorios.</p>
+              <div class="project-meta d-flex justify-content-between">
+                <div>
+                  <span class="text-muted small d-block">Cliente:</span>
+                  <span class="fw-bold">Moromex </span>
+                </div>
+                <div>
+                  <span class="text-muted small d-block">Sector:</span>
+                  <span class="fw-bold">Eccomerce</span>
+                </div>
+              </div>
+              <hr class="my-3">
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-light text-dark">Flutter</span>
+                <span class="badge bg-light text-dark">Firebase</span>
+                <span class="badge bg-light text-dark">Moromex</span>
+                <span class="badge bg-light text-dark">Google Fit</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Proyecto 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card border-0 overflow-hidden">
+            <div class="project-image">
+              <img src="img/projects/ckapin.png" class="card-img-top" alt="Sistema ERP">
+              <div class="project-overlay">
+                <a href="https://ckapintickets.com/" class="btn btn-primary btn-sm">Ir a</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <h5 class="fw-bold mb-0"> Ckapin Tickets | Chile</h5>
+                <span class="badge bg-info">2025</span>
+              </div>
+              <p class="text-muted mb-3">Ticketera Chilena, realizada para la venta de tickets a destinos turisticos, destinos como:
+Valle de Jere, Laguna Chaxa, entre otros, cuenta con pasarela de pagos y facturacion electronica, ademas de tener un sistema de registro de ventas y reportes por ventas a travez de la pagina.</p>
+              <div class="project-meta d-flex justify-content-between">
+                <div>
+                  <span class="text-muted small d-block">Cliente:</span>
+                  <span class="fw-bold"> Ckapin Tickets</span>
+                </div>
+                <div>
+                  <span class="text-muted small d-block">Sector:</span>
+                  <span class="fw-bold"> Turismo</span>
+                </div>
+              </div>
+              <hr class="my-3">
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-light text-dark">Php</span>
+                <span class="badge bg-light text-dark">MySql</span>
+                <span class="badge bg-light text-dark">Bootstrap</span>
+                <span class="badge bg-light text-dark">Git</span>
+                <span class="badge bg-light text-dark">Html</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Proyecto 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card border-0 overflow-hidden">
+            <div class="project-image">
+              <img src="img/projects/atlas.png" class="card-img-top" alt="Plataforma Educativa">
+              <div class="project-overlay">
+                <a href="https://atlaswebcc-1.web.app/" class="btn btn-primary btn-sm">Ir a</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <h5 class="fw-bold mb-0">ATLAS CC | Estados Unidos</h5>
+                <span class="badge bg-warning">2024</span>
+              </div>
+              <p class="text-muted mb-3">Pagina web con sistema, realizados para una quiropractica estado unidense enfocada en recuperacion de lesiones y rehabilitaciones post-accidentes.</p>
+              <div class="project-meta d-flex justify-content-between">
+                <div>
+                  <span class="text-muted small d-block">Cliente:</span>
+                  <span class="fw-bold">Atlas CC</span>
+                </div>
+                <div>
+                  <span class="text-muted small d-block">Sector:</span>
+                  <span class="fw-bold">Salud</span>
+                </div>
+              </div>
+              <hr class="my-3">
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-light text-dark">Vue.js</span>
+                <span class="badge bg-light text-dark">Javascript</span>
+                <span class="badge bg-light text-dark">Css</span>
+                <span class="badge bg-light text-dark">Firebase</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Proyecto 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card border-0 overflow-hidden">
+            <div class="project-image">
+              <img src="img/projects/shine.png" class="card-img-top" alt="Solución IoT">
+              <div class="project-overlay">
+                <a href="https://shinespro-633d8.web.app/" class="btn btn-primary btn-sm">Ir a</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <h5 class="fw-bold mb-0">Shines Pro | Estados Unidos</h5>
+                <span class="badge bg-danger">2024</span>
+              </div>
+              <p class="text-muted mb-3"> Landing Page realizado para la empresa Shines Pro dedicada al servicio de limpieza de centros de construccion y empresas industriales. Funcionalidades clave como envio y recepcion de mensajes entre la pagina y el telefono de la encargada. </p>
+              <div class="project-meta d-flex justify-content-between">
+                <div>
+                  <span class="text-muted small d-block">Cliente:</span>
+                  <span class="fw-bold">Shines Pro</span>
+                </div>
+                <div>
+                  <span class="text-muted small d-block">Sector:</span>
+                  <span class="fw-bold">Limpieza</span>
+                </div>
+              </div>
+              <hr class="my-3">
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-light text-dark">React</span>
+                <span class="badge bg-light text-dark">Javascript</span>
+                <span class="badge bg-light text-dark">Firebase</span>
+                <span class="badge bg-light text-dark">Twilio</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      
+      
+  </section>
+
+  <!-- Tecnologías Mejoradas -->
+  <section id="tecnologias" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="badge bg-primary-soft text-primary mb-3">TECNOLOGÍAS</span>
+        <h2 class="fw-bold mb-3">Nuestro Stack Tecnológico</h2>
+        <p class="text-muted mx-auto" style="max-width: 700px;">Utilizamos las mejores herramientas y frameworks para garantizar resultados de alta calidad.</p>
+      </div>
+      
+      <div class="row g-4">
+        <!-- Frontend -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card tech-category-card border-0 h-100">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-4">
+                <div class="icon-box bg-primary-gradient me-3">
+                  <i class="fas fa-desktop text-white"></i>
+                </div>
+                <h4 class="fw-bold mb-0">Frontend</h4>
+              </div>
+              <ul class="tech-list">
+                <li>
+                  <img src="img/tech/react.png" alt="React" class="tech-logo">
+                  <span>React.js</span>
+                </li>
+                <li>
+                  <img src="img/tech/vue.png" alt="Vue.js" class="tech-logo">
+                  <span>Vue.js</span>
+                </li>
+                <li>
+                  <img src="img/tech/angular.png" alt="Angular" class="tech-logo">
+                  <span>Angular</span>
+                </li>
+                <li>
+                  <img src="img/tech/typescript.png" alt="TypeScript" class="tech-logo">
+                  <span>TypeScript</span>
+                </li>
+                <li>
+                  <img src="img/tech/tailwind.png" alt="Tailwind CSS" class="tech-logo">
+                  <span>Tailwind CSS</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Backend -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card tech-category-card border-0 h-100">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-4">
+                <div class="icon-box bg-success-gradient me-3">
+                  <i class="fas fa-server text-white"></i>
+                </div>
+                <h4 class="fw-bold mb-0">Backend</h4>
+              </div>
+              <ul class="tech-list">
+                <li>
+                  <img src="img/tech/nodejs.png" alt="Node.js" class="tech-logo">
+                  <span>Node.js</span>
+                </li>
+                <li>
+                  <img src="img/tech/laravel.png" alt="Laravel" class="tech-logo">
+                  <span>Laravel</span>
+                </li>
+                <li>
+                  <img src="img/tech/django.png" alt="Django" class="tech-logo">
+                  <span>Django</span>
+                </li>
+                <li>
+                  <img src="img/tech/spring.png" alt="Spring" class="tech-logo">
+                  <span>Spring Boot</span>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Mobile -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card tech-category-card border-0 h-100">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-4">
+                <div class="icon-box bg-warning-gradient me-3">
+                  <i class="fas fa-mobile-alt text-white"></i>
+                </div>
+                <h4 class="fw-bold mb-0">Mobile</h4>
+              </div>
+              <ul class="tech-list">
+                <li>
+                  <img src="img/tech/flutter.png" alt="Flutter" class="tech-logo">
+                  <span>Flutter</span>
+                </li>
+                <li>
+                  <img src="img/tech/react-native.png" alt="React Native" class="tech-logo">
+                  <span>React Native</span>
+                </li>
+                
+                <li>
+                  <img src="img/tech/kotlin.png" alt="Kotlin" class="tech-logo">
+                  <span>Kotlin</span>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- DevOps -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card tech-category-card border-0 h-100">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-4">
+                <div class="icon-box bg-info-gradient me-3">
+                  <i class="fas fa-cloud text-white"></i>
+                </div>
+                <h4 class="fw-bold mb-0">DevOps & Cloud</h4>
+              </div>
+              <ul class="tech-list">
+                <li>
+                  <img src="img/tech/aws.png" alt="AWS" class="tech-logo">
+                  <span>AWS</span>
+                </li>
+                <li>
+                  <img src="img/tech/azure.png" alt="Azure" class="tech-logo">
+                  <span>Azure</span>
+                </li>
+                <li>
+                  <img src="img/tech/docker.png" alt="Docker" class="tech-logo">
+                  <span>Docker</span>
+                </li>
+                <li>
+                  <img src="img/tech/firebase.png" alt="Kubernetes" class="tech-logo">
+                  <span>Firebase</span>
+                </li>
+                <li>
+                  <img src="img/tech/terraform.png" alt="Terraform" class="tech-logo">
+                  <span>Terraform</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Más tecnologías -->
+      <div class="row mt-4">
+        <div class="col-12">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body p-4">
+              <h4 class="fw-bold mb-4 text-center">Otras tecnologías que utilizamos</h4>
+              <div class="d-flex flex-wrap justify-content-center gap-3">
+                <div class="tech-badge">
+                  <img src="img/tech/mongodb.png" alt="MongoDB" class="tech-logo-sm">
+                  <span>MongoDB</span>
+                </div>
+                <div class="tech-badge">
+                  <img src="img/tech/postgresql.png" alt="PostgreSQL" class="tech-logo-sm">
+                  <span>PostgreSQL</span>
+                </div>
+                
+                <div class="tech-badge">
+                  <img src="img/tech/graphql.png" alt="GraphQL" class="tech-logo-sm">
+                  <span>GraphQL</span>
+                </div>
+                <div class="tech-badge">
+                  <img src="img/tech/firebase.png" alt="Firebase" class="tech-logo-sm">
+                  <span>Firebase</span>
+                </div>
+                
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nosotros -->
+  <section id="nosotros" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <span class="badge bg-primary-soft text-primary mb-3">SOBRE NOSOTROS</span>
+          <h2 class="fw-bold mb-4">Expertos en Soluciones Digitales</h2>
+          <p class="lead mb-4">En JwDevs combinamos creatividad, tecnología y experiencia para ofrecer soluciones que realmente marcan la diferencia.</p>
+          
+          <div class="about-features mb-5">
+            <div class="d-flex mb-3">
+              <div class="icon-box bg-primary-gradient me-4 flex-shrink-0">
+                <i class="fas fa-medal text-white"></i>
+              </div>
+              <div>
+                <h4 class="fw-bold mb-2">3+ Años de Experiencia</h4>
+                <p class="text-muted mb-0">Hemos estado ayudando a empresas a transformarse digitalmente desde 2022.</p>
+              </div>
+            </div>
+            
+            <div class="d-flex mb-3">
+              <div class="icon-box bg-success-gradient me-4 flex-shrink-0">
+                <i class="fas fa-users text-white"></i>
+              </div>
+              <div>
+                <h4 class="fw-bold mb-2">Equipo Multidisciplinario</h4>
+                <p class="text-muted mb-0">Profesionales especializados en diferentes áreas tecnológicas con certificados que validan su trabajo y experiencia.</p>
+              </div>
+            </div>
+            
+            <div class="d-flex">
+              <div class="icon-box bg-warning-gradient me-4 flex-shrink-0">
+                <i class="fas fa-globe-americas text-white"></i>
+              </div>
+              <div>
+                <h4 class="fw-bold mb-2">Clientes en 5 Países</h4>
+                <p class="text-muted mb-0">Hemos entregado soluciones a empresas en diferentes paises de America..</p>
+              </div>
+            </div>
+          </div>
+          
+          <a href="#equipo" id="toggleTeamBtn" class="btn btn-primary px-4">Conoce nuestro equipo</a>
+        </div>
+        
+        <div class="col-lg-6">
+          <div class="about-image position-relative">
+            <img src="img/team/collage.jpg" alt="Nuestro equipo" class="img-fluid rounded-3 shadow">
+            <div class="experience-badge bg-primary text-white rounded-circle shadow">
+              <span class="d-block fs-1 fw-bold">03+</span>
+              <span class="d-block">Años</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<!-- Equipo -->
+<section id="equipo" class="py-7 bg-light hidden">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center mb-5">
+        <span class="badge bg-primary-soft text-primary mb-3">NUESTRO EQUIPO</span>
+        <h2 class="fw-bold mb-4">Profesionales en Desarrollo</h2>
+        <p class="lead">Conoce al talentoso equipo detrás de JwDevs</p>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-12">
+        <!-- Carrusel del equipo -->
+        <div class="team-carousel owl-carousel owl-theme">
+          <!-- Miembro 1 -->
+          <div class="team-item text-center">
+            <div class="team-img position-relative mb-4">
+              <img src="img/team/team_1.jpg" alt="Juan Pérez" class="img-fluid rounded-circle shadow">
+              <div class="team-social">
+                <a href="#" class="github"><i class="fab fa-github"></i></a>
+                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+            <h4 class="fw-bold mb-1">Williams, Campos...</h4>
+            <p class="text-primary mb-3">Desarrollador Full Stack</p>
+            <p class="px-3">Especialista en JavaScript y arquitecturas escalables con 5 años de experiencia.</p>
+          </div>
+          
+          <!-- Miembro 2 -->
+          <div class="team-item text-center">
+            <div class="team-img position-relative mb-4">
+              <img src="img/team/team_2.jpg" alt="María García" class="img-fluid rounded-circle shadow">
+              <div class="team-social">
+                <a href="#" class="github"><i class="fab fa-github"></i></a>
+                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <h4 class="fw-bold mb-1">Jheferson, Condori...</h4>
+            <p class="text-primary mb-3">Diseñador UX/UI</p>
+            <p class="px-3">Apasionada por crear experiencias intuitivas y hermosas para los usuarios.</p>
+          </div>
+          
+          <!-- Miembro 3 -->
+          <div class="team-item text-center">
+            <div class="team-img position-relative mb-4">
+              <img src="img/team/team_3.jpg" alt="Carlos Rodríguez" class="img-fluid rounded-circle shadow">
+              <div class="team-social">
+                <a href="#" class="github"><i class="fab fa-github"></i></a>
+                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+            <h4 class="fw-bold mb-1">Jayro, Rojas...</h4>
+            <p class="text-primary mb-3">Especialista en DevOps</p>
+            <p class="px-3">Experto en infraestructura cloud y pipelines de despliegue continuo.</p>
+          </div>
+          
+          <!-- Miembro 4 -->
+          <div class="team-item text-center">
+            <div class="team-img position-relative mb-4">
+              <img src="img/team/team_4.jpg" alt="Ana López" class="img-fluid rounded-circle shadow">
+              <div class="team-social">
+                <a href="#" class="github"><i class="fab fa-github"></i></a>
+                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <h4 class="fw-bold mb-1">Jamyl, Luis...</h4>
+            <p class="text-primary mb-3">Desarrollador Mobile</p>
+            <p class="px-3">Crea aplicaciones nativas e híbridas para iOS y Android con React Native.</p>
+          </div>
+          
+          <!-- Puedes agregar más miembros aquí según necesites -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  $(document).ready(function(){
+    var teamCarousel = $('.team-carousel');
+    
+    // Configuración base
+    teamCarousel.owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
+      smartSpeed: 800,
+      responsive: {
+        0: { 
+          items: 1,
+          touchDrag: true,
+          pullDrag: true,
+          freeDrag: true
+        },
+        576: { items: 2 },
+        768: { items: 3 },
+        992: { items: 4 },
+        1200: { items: 5 }
+      }
+    });
+    
+    // Forzar dirección hacia adelante en móvil
+    function forceForward() {
+      if ($(window).width() < 576) {
+        teamCarousel.trigger('next.owl.carousel');
+      }
+    }
+    
+    // Intervalo para mover siempre hacia adelante en móvil
+    setInterval(forceForward, 3000);
+  });
+
+</script>
+ 
+<script>
+  $(document).ready(function() {
+  // Manejar el clic en el botón
+  $('#toggleTeamBtn').click(function(e) {
+    e.preventDefault(); // Prevenir el comportamiento predeterminado del anclaje
+    
+    const teamSection = $('#equipo');
+    
+    // Alternar visibilidad
+    if (teamSection.hasClass('hidden')) {
+      teamSection.removeClass('hidden').addClass('visible');
+      $(this).text('Ocultar equipo'); // Cambiar texto del botón
+    } else {
+      teamSection.removeClass('visible').addClass('hidden');
+      $(this).text('Conoce nuestro equipo'); // Restaurar texto del botón
+    }
+    
+    // Desplazamiento suave solo si la sección está visible
+    if (teamSection.hasClass('visible')) {
+      $('html, body').animate({
+        scrollTop: teamSection.offset().top - 20
+      }, 500);
+    }
+  });
+});
+</script>
+
+
+
+
+  <!-- Testimonios -->
+  <section class="testimonials-section py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="badge bg-primary-soft text-primary mb-3">TESTIMONIOS</span>
+        <h2 class="fw-bold mb-3">Lo que dicen nuestros clientes</h2>
+        <p class="text-muted mx-auto" style="max-width: 700px;">La satisfacción de nuestros clientes es nuestra mejor carta de presentación.</p>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card testimonial-card border-0 h-100">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-4">
+                <img src="img/testimonials/client1.jpg" alt="Cliente" class="rounded-circle me-3" width="60">
+                <div>
+                  <h5 class="fw-bold mb-0">Carlos Méndez</h5>
+                  <span class="text-muted small">CEO, ModaExpress</span>
+                </div>
+              </div>
+              <p class="mb-4">"JwDevs transformó completamente nuestro e-commerce. En solo 6 meses duplicamos nuestras ventas online gracias a su plataforma optimizada y fácil de usar."</p>
+              <div class="rating text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card testimonial-card border-0 h-100">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-4">
+                <img src="img/testimonials/client2.jpg" alt="Cliente" class="rounded-circle me-3" width="60">
+                <div>
+                  <h5 class="fw-bold mb-0">Ana Rodríguez</h5>
+                  <span class="text-muted small">Directora de TI, VitalCare</span>
+                </div>
+              </div>
+              <p class="mb-4">"La aplicación móvil que desarrollaron superó todas nuestras expectativas. El equipo de JwDevs demostró un profundo conocimiento del sector salud y sus regulaciones."</p>
+              <div class="rating text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card testimonial-card border-0 h-100">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-4">
+                <img src="img/testimonials/client3.jpg" alt="Cliente" class="rounded-circle me-3" width="60">
+                <div>
+                  <h5 class="fw-bold mb-0">Luis Fernández</h5>
+                  <span class="text-muted small">Gerente General, GrupoIndustrial</span>
+                </div>
+              </div>
+              <p class="mb-4">"El sistema ERP que implementaron ha optimizado nuestros procesos en un 40%. Su enfoque en entender nuestro negocio antes de desarrollar fue clave para el éxito del proyecto."</p>
+              <div class="rating text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto Mejorado -->
+  <section id="contacto" class="py-5 bg-dark text-white" >
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center mb-5">
+          <span class="badge bg-primary-soft text-primary mb-3">CONTÁCTANOS</span>
+          <h2 class="fw-bold mb-3">¿Listo para comenzar tu proyecto?</h2>
+          <p class="lead mx-auto" style="max-width: 700px;">Completa el formulario y nos pondremos en contacto contigo en menos de 24 horas para discutir cómo podemos ayudarte.</p>
+        </div>
+      </div>
+      
+      <div class="row g-5">
+        <div class="col-lg-5">
+          <div class="contact-info">
+            <div class="d-flex align-items-start mb-5">
+              
+              
+            </div>
+            
+            <div class="d-flex align-items-start mb-5">
+              <div class="icon-box bg-success-gradient me-4 flex-shrink-0">
+                <i class="fas fa-envelope text-white"></i>
+              </div>
+              <div>
+                <h4 class="fw-bold mb-3">Correos Electrónico</h4>
+                <p class="mb-0">jwdevs2025@gmail.com<br>jwdevs2025@gmail.com</p>
+              </div>
+            </div>
+            
+            <div class="d-flex align-items-start">
+              <div class="icon-box bg-warning-gradient me-4 flex-shrink-0">
+                <i class="fas fa-phone-alt text-white"></i>
+              </div>
+              <div>
+                <h4 class="fw-bold mb-3">Teléfono</h4>
+                <p class="mb-0">+51 920504763<br>Lunes a Viernes: 9am - 6pm</p>
+              </div>
+            </div>
+            
+            <div class="social-links mt-5">
+              <h5 class="fw-bold mb-3">Síguenos</h5>
+              <div class="d-flex gap-3">
+                <a href="#" class="social-icon bg-facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-icon bg-twitter">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-icon bg-linkedin">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-icon bg-github">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-icon bg-dribbble">
+                  <i class="fab fa-dribbble"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-7">
+          <form class="contact-form">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="name" class="form-label">Nombre completo</label>
+                <input type="text" class="form-control" id="name" required>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="col-12">
+                <label for="subject" class="form-label">Asunto</label>
+                <input type="text" class="form-control" id="subject" required>
+              </div>
+              <div class="col-12">
+                <label for="service" class="form-label">Servicio de interés</label>
+                <select class="form-select" id="service">
+                  <option selected>Selecciona un servicio</option>
+                  <option>Desarrollo Web</option>
+                  <option>Aplicaciones Móviles</option>
+                  <option>Diseño UI/UX</option>
+                  <option>Desarrollo Backend</option>
+                  <option>Cloud Computing</option>
+                  <option>Inteligencia Artificial</option>
+                  <option>Consultoría Tecnológica</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="message" rows="5" required></textarea>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="privacy" required>
+                  <label class="form-check-label" for="privacy">
+                    Acepto la <a href="#" class="text-primary">Política de Privacidad</a>
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary px-4 py-2">Enviar Mensaje</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-black text-white">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <h3 class="fw-bold mb-4">
+            <span class="text-primary">JW</span>Devs
+          </h3>
+          <p class="mb-4">Transformamos ideas en soluciones digitales innovadoras que impulsan el crecimiento de tu negocio.</p>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-github"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-dribbble"></i></a>
+          </div>
+        </div>
+        
+        <div class="col-lg-2 col-md-4">
+          <h5 class="fw-bold mb-4">Servicios</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#" class="text-white-50">Desarrollo Web</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50">Apps Móviles</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50">Diseño UI/UX</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50">Backend & API</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50">Cloud Computing</a></li>
+            <li><a href="#" class="text-white-50">Inteligencia Artificial</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-2 col-md-4">
+          <h5 class="fw-bold mb-4">Empresa</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#" class="text-white-50">Sobre Nosotros</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50">Equipo</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50">Proyectos</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50">Blog</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50">Carreras</a></li>
+            <li><a href="#" class="text-white-50">Contacto</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-4 col-md-4">
+          <h5 class="fw-bold mb-4">Suscríbete</h5>
+          <p class="mb-4">Recibe las últimas noticias y actualizaciones directamente en tu bandeja de entrada.</p>
+          <form class="subscribe-form">
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Tu correo electrónico">
+              <button class="btn btn-primary" type="submit">Suscribir</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+      <hr class="my-5 border-secondary">
+      
+      <div class="row">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <p class="mb-0">&copy; 2025 JwDevs. Todos los derechos reservados.</p>
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Tu JS personalizado -->
+  <script src="js/main.js"></script>
+</body>
+</html>
