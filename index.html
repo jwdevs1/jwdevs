@@ -1022,50 +1022,71 @@ Valle de Jere, Laguna Chaxa, entre otros, cuenta con pasarela de pagos y factura
         </div>
         
         <div class="col-lg-7">
-          <form class="contact-form">
-            <div class="row g-3">
-              <div class="col-md-6">
-                <label for="name" class="form-label">Nombre completo</label>
-                <input type="text" class="form-control" id="name" required>
-              </div>
-              <div class="col-md-6">
-                <label for="email" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="email" required>
-              </div>
-              <div class="col-12">
-                <label for="subject" class="form-label">Asunto</label>
-                <input type="text" class="form-control" id="subject" required>
-              </div>
-              <div class="col-12">
-                <label for="service" class="form-label">Servicio de interés</label>
-                <select class="form-select" id="service">
-                  <option selected>Selecciona un servicio</option>
-                  <option>Desarrollo Web</option>
-                  <option>Aplicaciones Móviles</option>
-                  <option>Diseño UI/UX</option>
-                  <option>Desarrollo Backend</option>
-                  <option>Cloud Computing</option>
-                  <option>Inteligencia Artificial</option>
-                  <option>Consultoría Tecnológica</option>
-                </select>
-              </div>
-              <div class="col-12">
-                <label for="message" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="message" rows="5" required></textarea>
-              </div>
-              <div class="col-12">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="privacy" required>
-                  <label class="form-check-label" for="privacy">
-                    Acepto la <a href="#" class="text-primary">Política de Privacidad</a>
-                  </label>
-                </div>
-              </div>
-              <div class="col-12">
-                <button type="submit" class="btn btn-primary px-4 py-2">Enviar Mensaje</button>
-              </div>
-            </div>
-          </form>
+         <form id="contactForm" action="https://formsubmit.co/jwdevs2025@gmail.com" method="POST" class="contact-form">
+  <div class="row g-3">
+    <div class="col-md-6">
+      <label for="name" class="form-label">Nombre completo</label>
+      <input type="text" class="form-control" id="name" name="Nombre" required>
+    </div>
+    <div class="col-md-6">
+      <label for="email" class="form-label">Correo electrónico</label>
+      <input type="email" class="form-control" id="email" name="Correo" required>
+    </div>
+    <div class="col-12">
+      <label for="subject" class="form-label">Asunto</label>
+      <input type="text" class="form-control" id="subject" name="Asunto" required>
+    </div>
+    <div class="col-12">
+      <label for="service" class="form-label">Servicio de interés</label>
+      <select class="form-select" id="service" name="Servicio de Interés">
+        <option selected disabled>Selecciona un servicio</option>
+        <option>Desarrollo Web</option>
+        <option>Aplicaciones Móviles</option>
+        <option>Diseño UI/UX</option>
+        <option>Desarrollo Backend</option>
+        <option>Cloud Computing</option>
+        <option>Inteligencia Artificial</option>
+        <option>Consultoría Tecnológica</option>
+      </select>
+    </div>
+    <div class="col-12">
+      <label for="message" class="form-label">Mensaje</label>
+      <textarea class="form-control" id="message" name="Mensaje" rows="5" required></textarea>
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="privacy" required>
+        <label class="form-check-label" for="privacy">
+          Acepto la <a href="#" class="text-primary">Política de Privacidad</a>
+        </label>
+      </div>
+    </div>
+
+    <!-- Evitamos redirección -->
+    <input type="hidden" name="_next" value="">
+    <input type="hidden" name="_captcha" value="false">
+
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary px-4 py-2">Enviar Mensaje</button>
+    </div>
+  </div>
+</form>
+
+<!-- MODAL de éxito -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title w-100" id="successModalLabel">Mensaje Enviado</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>¡Tu mensaje fue enviado exitosamente!<br>Gracias por contactarnos.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
         </div>
       </div>
     </div>
