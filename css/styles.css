@@ -88,8 +88,7 @@ a {
 .hero-section {
   background: linear-gradient(135deg, var(--dark), var(--primary));
   color: white;
-  position: relative;
-  overflow: hidden;
+
 }
 
 .hero-waves {
